@@ -1,0 +1,41 @@
+.aqui{
+    
+    background-color: white;
+    border-radius: 50px 50px;
+    margin-top:15%;
+}
+
+.teste{
+background-color: rgb(197, 248, 223);
+border-color:hsla(148, 72%, 55%, 1);
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+}
+.titulo{
+/* font-family: 'Indie Flower', cursive; */
+color:rgb(146, 3, 3);
+margin-top: 15%;
+}
+
+/* h5{
+font-family: 'Indie Flower', cursive;
+} */
+.btn-sim{
+background-color: rgb(63, 145, 63);
+color:white;
+width: 15%;
+/* font-family: 'Indie Flower', cursive; */
+}
+
+.btn-nao{
+background-color:rgb(146, 3, 3);
+color:white;
+width: 15%;
+/* font-family: 'Indie Flower', cursive; */
+}
+.btn-sim:hover{
+background-color: rgb(128, 221, 128);
+}
+.btn-nao:hover{
+background-color:rgb(241, 117, 117);
+}

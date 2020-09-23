@@ -1,0 +1,88 @@
+<div class="container mt-5">
+
+
+  <div *ngIf="nomeCategoria == null">
+    <h1 class="mt-100">Todos os nossos Produtos</h1>
+    <div class="row mt-5 mb-5">
+      <div class="col-md-3" *ngFor='let item of listaProdutos'>
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">{{item.nome}}</h5>
+            <img class="card-img-top tmh-image" src="{{item.imagem}}" alt="Imagem de capa do card">
+            <p class="card-text">{{item.descricao}}</p>
+            <p class="card-text">{{item.preco}}</p>
+            <a href="#" class="btn btn-primary" routerLink='/produto'>Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="nomeCategoria=='coleta';else categorias">
+
+    <div class="container-fluid">
+      <div class="row d-flex">
+
+        <div class="col-md-4 config2">
+          <img class="config"
+            src="https://www.lipor.pt/darmais/img/Entregar.gif"
+            alt="coleta-logo" width="70%">
+        </div>
+
+        <div class="col-md-7 config  ">
+          <h1 class="text-center mb-2">Urbs Coleta</h1>
+          <h3 class="text-center">Vamos dar um destino ecológico para seu lixo?</h3>
+          <label class="tm-text">Qual o endereço para a coleta?</label>
+          <input type="text" class="form-control" placeholder="Endereço">
+          <label class="tm-text">Escolha uma data que possamos ir até você:</label>
+          <input type="text" class="form-control" placeholder="dd/mm/aaaa">
+          <label class="tm-text">Coloque um horário que você pode nos atender:</label>
+          <input type="text" class="form-control" placeholder="00:00"><br>
+          <h3 class="tm-text text-center">Seleciona as coletas que você separou:</h3>
+          <div class="row d-flex justify-content-start">
+            <div class="form-check mr-3 ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label tm-text" for="defaultCheck1">PLÁSTICO</label>
+            </div>
+            <div class="form-check mr-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label tm-text" for="defaultCheck1">PAPEL</label>
+            </div>
+            <div class="form-check mr-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label tm-text" for="defaultCheck1">METAL</label>
+            </div>
+            <div class="form-check mr-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label tm-text" for="defaultCheck1">VIDRO</label>
+            </div>
+          </div>
+          <button type="button" class="btn btn-cadastrar mt-3 w-25" (click)="coleta()">Ajudar o Planeta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #categorias>
+    <div *ngFor='let item of listaCategorias'>
+      <h1 class="mt-100 text-center">Produtos da categoria {{nomeCategoria}}</h1>
+
+      <div class="row mt-5 mb-5">
+
+        <div class="col-md-4" *ngFor='let produto of item.produto|orderBy:key:reverse'>
+          <div class="card mb-5">
+            <div class="card-body">
+              <h5 class="card-title dados-produto text-center"><strong> {{produto.nome}}</strong></h5>
+              <img class="card-img-top tmh-image" src="{{produto.imagem}}" alt="Imagem de capa do card">
+              <p class="card-text dados-produto text-center">{{produto.descricao}}</p>
+              <p class="card-text dados-produt text-center"> R$ {{produto.preco}}</p>
+              <a href="#" class="btn btn-comprar" routerLink='/produto'>Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+
+</div>

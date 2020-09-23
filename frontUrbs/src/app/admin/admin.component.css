@@ -1,0 +1,52 @@
+/* h1,label{
+    font-family: 'Indie Flower', cursive;
+    
+} */
+input,select{
+    border-radius: 35px;
+    border-color: hsla(148, 72%, 55%, 1)
+}
+
+.corFundo {
+    background: linear-gradient(45deg, hsla(148, 72%, 55%, 1) 27%, hsla(201, 49%, 33%, 1) 88%);
+}
+.margem{
+    background-color: white;
+}
+
+.margin {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.tmh-image {
+    width: 280px;
+    height: 300px;
+}
+
+.config {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+.btn-cadastrar, .btn-editar{
+    background-color: rgb(59, 216, 132) ;
+    color:white;
+
+    /* font-family: 'Indie Flower', cursive; */
+}
+.btn-cadastrar:hover{
+    background-color:  rgb(25, 62, 141);
+}
+.btn-editar:hover{
+    background-color: rgb(17, 131, 17);
+}
+
+.btn-excluir{
+    background-color:rgb(226, 26, 26);
+    color:white;
+    /* font-family: 'Indie Flower', cursive; */
+}
+.btn-excluir:hover{
+    background-color:rgb(146, 3, 3);
+}

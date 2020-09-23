@@ -1,0 +1,68 @@
+<div class="container-fluid body margin inicial">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+      <div class="login-wrap">
+        <div class="login-html">
+          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
+            class="tab cursor">Login</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+            class="tab cursor">Cadastro</label>
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="user" class="label">Email</label>
+                <input id="user" type="text" class="input" [(ngModel)]='userLogin.usuario'>
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Senha</label>
+                <input id="pass" type="password" class="input" data-type="password" [(ngModel)]='userLogin.senha'>
+              </div>
+              <div class="group">
+                <input id="check" type="checkbox" class="check" checked>
+                <label for="check"><span class="icon cursor"></span>Mantenha-me conectado</label>
+              </div>
+              <div class="group">
+                <input type="submit" class="button" value="Entrar" (click)='entrar()'>
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk">
+                <a href="#forgot">Esqueceu a senha?</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+              <div class="group">
+                <label for="user" class="label">Nome</label>
+                <input id="user" type="text" class="input" [(ngModel)]='user.nome'>
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Email</label>
+                <input id="pass" type="text" class="input" [(ngModel)]='user.usuario'>
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Senha</label>
+                <input id="pass" type="password" class="input" data-type="password" (input)='conferirSenha($event)'
+                  value='{{senha}}'>
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Repetir a senha</label>
+                <input id="pass" type="password" class="input" data-type="password" [(ngModel)]='user.senha'>
+              </div>
+
+              <div class="group">
+                <input type="submit" class="button" value="Cadastrar" (click)='cadastrar()'>
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk espaco-final">
+                <label for="tab-1"><a class="cursor ">Já é cadastrado?</a></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="img pt-4" src="../../assets/image/login.png" width="95%" alt="">
+    </div>
+  </div>
+</div>

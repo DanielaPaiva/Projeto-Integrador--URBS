@@ -1,0 +1,136 @@
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-9 mt-5">
+            <h2 class="mt-5 txt text-center"> Meus Produtos</h2>
+            <hr>
+            <div class="row ">
+                <div class="col-md-4 mt-5">
+                    <p class="txt">Nome</p>
+                    <div class="imagem w-50">
+                        <img class="card-img-top rounded-circle w-70 h-144"
+                            src="https://assets.instabuy.com.br/ib.item.image.big/b-bb49b1a78d2e4bfbbbe1e52a56332d6e.jpg"
+                            alt="Imagem de capa do card">
+                       
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-5">
+                    <p class="txt">Quantidade</p>
+                    <div class="botao-quantidade mt-5">
+                        <div data-app="product.quantity" id="quantidade">
+                            <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção
+                                para variação do produto</span>
+                            <input class="btn-menos" type="button" id="plus" value='-' onclick="sub()" />
+                            <input class="btn-qnt" id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                            <input class="btn-mais" type="button" id="minus" value='+' onclick="add()">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <p class="txt">Preço</p>
+                    <div class="preco mt-5">
+                        <strong>R$: 8,99</strong>
+                    </div>
+                </div>
+               
+                <div class="row ">
+                    <div class="col-md-4 mt-5">
+
+                        <div class="imagem w-50">
+
+                            <img class="card-img-top rounded-circle w-70 h-144"
+                                src="https://savegnago.vteximg.com.br/arquivos/ids/283869-1000-1000/SUCO-NATURACITRUS-1L-NATURAL-LARANJA.jpg?v=636440427812000000"
+                                alt="Imagem de capa do card">
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <p class="txt">Quantidade</p>
+                        <div class="botao-quantidade mt-5">
+                            <div data-app="product.quantity" id="quantidade">
+                                <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma
+                                    opção
+                                    para variação do produto</span>
+                                <input class="btn-menos" type="button" id="plus" value='-' onclick="process(-1)" />
+                                <input class="btn-qnt" id="quant" name="quant" class="text" size="1" type="text" value="1"
+                                    maxlength="5" />
+                                <input class="btn-mais"  type="button" id="minus" value='+' onclick="process(1)">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <p class="txt">Preço</p>
+                        <div class="preco mt-5">
+                            <strong>R$: 20,89</strong>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row ">
+                        <div class="col-md-4 mt-5 mb-3">
+                            <div class="imagem w-50">
+                                <img class="card-img-top rounded-circle w-70 h-144"
+                                    src="https://i0.wp.com/www.funverde.org.br/blog/wp-content/uploads/2019/03/20190305_144839.gif?fit=640%2C640&ssl=1"
+                                    alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <p class="txt">Quantidade</p>
+                            <div class="botao-quantidade mt-5">
+                                <div data-app="product.quantity" id="quantidade">
+                                    <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione
+                                        uma
+                                        opção para variação do produto</span>
+                                    <input class="btn-menos" type="button" id="plus" value='-' onclick="process(-1)" />
+                                    <input class="btn-qnt" id="quant" name="quant" class="text" size="1" type="text" value="1"
+                                        maxlength="5" />
+                                    <input class="btn-mais"  type="button" id="minus" value='+' onclick="process(1)">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <p class="txt">Preço</p>
+                            <div class="preco mt-5">
+                                <strong>R$: 5,99</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-md-3 mt-5 ">
+            <div class="grade">
+                <h2 class="pedido text-center mb-2 mt-5 ">Pedido</h2>
+                <hr>
+                <p class="ml-3 info">Produtos selecionados: 4</p>
+                <p class="ml-3 info">TOTAL: R$ 35,87</p>
+                <p class="ml-3 info">Frete: R$ 10,21</p>
+
+                <hr>
+               <p class="font-weight-bold text-center">TOTAL:  R$  46,08</p>
+              
+                <button type="button" class="btn btn-comprar justify-content-centerb w-100 mt-4">Comprar</button>
+            </div>
+
+        </div>
+
+
+        <script>
+            function process(quant) {
+                var value = parseInt(document.getElementById("quant").value);
+                value += quant;
+                if (value < 1) {
+                    document.getElementById("quant").value = 1;
+                } else {
+                    document.getElementById("quant").value = value;
+                }
+            }
+        </script>

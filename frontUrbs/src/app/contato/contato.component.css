@@ -1,0 +1,78 @@
+h2,h3, label,h4{
+    /* font-family: 'Indie Flower', cursive; */
+    color:rgb(39, 38, 38);
+}
+
+
+
+.linha{
+    background-color: white;
+    border-radius: 50px 50px;
+    box-shadow: 4px 6px 18px -6px rgba(0, 0, 0, 0.678); 
+}
+
+.container{
+    margin-top:9%;
+   
+}
+/*Contato*/
+
+.nome{
+    border-radius: 50px;
+    background-color: #29b23a;
+    color: white;
+    border:none;
+}
+.nome::placeholder{
+    color: white; 
+}
+.email{
+    border-radius: 50px;
+    background-color: #29b23a;
+    color: white;
+    border:none;
+}
+.email::placeholder{
+    color: white;
+}
+.texto{
+    background-color: #29b23a;
+    color: white;
+    border:none;
+}
+.texto::placeholder{
+    color: white;
+}
+
+.btn-enviar{
+    border:none;
+    border-radius: 50px;
+    background-color:#29b23a;
+    color: white;
+    width: 100%;
+    height:35px; 
+}
+.btn-enviar:hover{
+    background-color:#2e3aa8;
+    color: rgb(239, 243, 239);
+}
+
+.endereco{
+    color:#0e4025;
+}
+
+
+
+iframe{
+    margin-top: 1rem;
+}
+
+.corFundo {
+    /* background-position: linear-gradient(90deg, hsla(192, 75%, 36%,1) 5%, hsla(114, 91%, 54%,1) 70%); */
+    background-color: linear-gradient(to right, rgb(23, 134, 160,) 5%, rgb(52, 244, 31,));
+}
+
+.posicao {
+    margin-top: 100pt;
+    margin-bottom: 70pt;
+}

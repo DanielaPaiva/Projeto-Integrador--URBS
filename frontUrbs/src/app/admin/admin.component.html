@@ -1,0 +1,78 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Indie+Flower&display=swap');
+</style>
+
+<div class="container ">
+  <div class="row d-flex  mt-5 mb-5 pr-5">
+    <div class="col-md-6 config">
+      <h1 class="text-center">Cadastro de produtos</h1>
+      <label class="">Digite o nome do produto: </label>
+      <input type="text" class="form-control" placeholder="Nome" [(ngModel)]='produto.nome'>
+      <label class="">Digite a descrição do produto: </label>
+      <input type="text" class="form-control" placeholder="Descrição" [(ngModel)]='produto.descricao'>
+      <label class="">Digite o preço do produto: </label>
+      <input type="text" class="form-control" placeholder="Preço" [(ngModel)]='produto.preco'>
+      <label class="">Adicione o link da sua imagem: </label>
+      <input type="text" class="form-control" placeholder="Imagem" [(ngModel)]='produto.imagem'>
+      <label class="">Selecione a Categoria: </label>
+      <select name="categoria" id='categoria' class="form-control" [(ngModel)]='idCategoria'
+        (change)='findByIdCategoria()'>
+        <option *ngFor='let item of listaCategorias' value={{item.id}}>
+          {{item.nome}}
+        </option>
+      </select>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-cadastrar mt-3 w-25 " (click)='cadastrar()'>Cadastrar</button>
+      </div>
+    </div>
+    <div class="col-md-6 config pl-5">
+      <img
+        src="https://1.bp.blogspot.com/-E5CNfdknDkY/WFb6lV1Q_SI/AAAAAAAAYDQ/n_PmOX2KvtggzdW09PrqwxsUKusfo88RQCLcB/s1600/Gifs%2Banimados%2BMa%25C3%25A7a%2B7.gif"
+        alt="">
+    </div>
+  </div>
+
+
+
+
+
+  <h1 class="text-center ml-3">Seus produtos cadastrados</h1>
+
+  <div class="row d-flex justify-content-center ">
+    <div class="col-md-12">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Categoria</th>
+            <th scope="col" class="d-flex justify-content-end">Modificações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let item of listaProdutos|orderBy:key:reverse'>
+            <th scope="row">{{item.nome}}</th>
+            <td>{{item.descricao}}</td>
+            <td>{{item.preco}}</td>
+            <td>{{item.categoria.nome}}</td>
+            <td class="d-flex justify-content-end">
+              <a class="btn btn-editar m-2" [routerLink]="['/put-produto',item.id]">Editar</a>
+              <a class="btn btn-excluir m-2" [routerLink]="['/delete-produto',item.id]">Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
+        <div class="col-md-6">
+          <div class="col-md-6" *ngFor='let item of listaProdutos'>
+          <button type="button" class="btn btn-success btn-lg" routerLink='/put-produto'>Editar</button>
+          <button type="button" class="btn btn-danger btn-lg" routerLink='/delete-produto'>Excluir</button>
+          <button type="button" class="btn btn-success btn-lg" routerLink='/put-produto/{{item.idProduto}}'>Editar</button>
+      <button type="button" class="btn btn-danger btn-lg" routerLink='/delete-produto/{{item.idProduto}}'>Excluir</button>
+        </div>
+      </div>
+    </div> -->

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row d-flex justify-content-center mt-5 mb-5">
+    <div class="col-md-6 config  m-3">
+      <h1 class="text-center">Cadastro de Categorias</h1>
+      <label class="">Digite o nome da categoria: </label>
+      <input type="text" class="form-control" placeholder="Nome" [(ngModel)]='categoria.nome'>
+      <label class="">Digite a descrição da categoria: </label>
+      <input type="text" class="form-control" placeholder="Descrição" [(ngModel)]='categoria.descricao'>
+
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-cadastrar mt-3 w-25" (click)='cadastrar()'>Cadastrar</button>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center ml-3">Suas categorias cadastradas</h1>
+
+    <div class="row d-flex justify-content-center ">
+      <div class="col-md-10">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Descrição</th>
+              <th scope="col" class="d-flex justify-content-end">Modificações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let item of listaCategorias|orderBy:key:reverse'>
+              <th scope="row">{{item.nome}}</th>
+              <td>{{item.descricao}}</td>
+                <td class="d-flex justify-content-end">
+
+                  <a class="btn btn-editar m-2" [routerLink]="['/put-categoria',item.id]">Editar</a>
+                  <a class="btn btn-excluir m-2" [routerLink]="['/delete-categoria',item.id]">Excluir</a>
+                </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

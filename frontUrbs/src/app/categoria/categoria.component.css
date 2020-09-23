@@ -1,0 +1,27 @@
+.container{
+    margin-top:8%;
+    margin-bottom: 330px;
+}
+.card{
+    background-color:  #339e82c4;
+}
+h3,h5,h2{
+    /* font-family: 'Indie Flower', cursive; */
+    color:rgb(39, 38, 38);
+}
+
+.margin {
+    margin-top: 100px;
+}
+
+.btn-confira{
+    background-color:rgb(57, 194, 64);
+    color:rgb(255, 255, 255);
+    /* font-family: 'Indie Flower', cursive; */
+    width: 100%;
+
+}
+.btn-confira:hover{
+    background-color:#2e3aa8;
+    color: rgb(239, 243, 239);
+}

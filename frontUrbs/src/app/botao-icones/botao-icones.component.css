@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Indie+Flower&display=swap');
+
+body {
+  background: linear-gradient(45deg, hsla(148, 72%, 55%, 1) 27%, hsla(201, 49%, 33%, 1) 88%);
+}
+
+.main-btn {
+  /*   background: #6985c4; */
+  background: #0b2f7c;
+  color: black;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  box-sizing: border-box;
+  border: 2px solid #440047;
+  /*   bottom: 10px;
+  right: 10px; */
+  left: 95%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  z-index: 10;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.fab,
+.fa {
+  font-size: 30px;
+  color: black;
+  text-shadow: 0 0 10px white;
+}
+
+.sub-btns {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  /*   bottom: 10px;
+  right: 10px; */
+  left: 95%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.sub-btns>div {
+  box-sizing: border-box;
+  background: #788ecc;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #15278f;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn2 {
+  bottom: 60px;
+}
+
+.btn3 {
+  bottom: 120px;
+}
+
+.btn4 {
+  bottom: 180px;
+}
+
+.touch {
+  height: 50px !important;
+  width: 50px !important;
+  font-family: "poppins";
+}
+
+.btn5 {
+  bottom: 240px;
+  left: 5px;
+}
+
+.btn6 {
+  bottom: 290px;
+  left: 5px;
+}
+
+.btn7 {
+  bottom: 340px;
+  left: 5px;
+}
+
+.btn8 {
+  bottom: 390px;
+  left: 5px;
+}
+
+.btn9 {
+  bottom: 440px;
+  left: 5px;
+}
+
+.faFacebook,
+.faYoutube,
+.faInstagram,
+.faLinkedin,
+.faUser {
+  color: white;
+  padding-left: 13px;
+}
+
+.faFacebook:hover {
+  color: #031846;
+}
+
+.faInstagram:hover {
+  color: #ad1469;
+}
+
+.faYoutube:hover {
+  color: #d62424;
+}
+
+.faLinkedin:hover {
+  color: #186694;
+}
+
+.faUser:hover {
+  color: #1cb435;
+}
+

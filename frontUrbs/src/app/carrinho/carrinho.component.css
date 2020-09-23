@@ -1,0 +1,41 @@
+/*Meus produtos*/
+.txt{
+    /* font-family: 'Indie Flower', cursive; */
+}
+
+
+/*Pedidos*/
+.grade{
+    background-color: rgb(219, 214, 214);
+    height: 300px;
+    width: 140%;
+    /* font-family: 'Indie Flower', cursive; */
+}
+.info{
+    margin-top: 35px;
+    font-size:18px
+}
+.pedido{
+    /* font-family: 'Indie Flower', cursive; */
+}
+.btn-comprar{
+    border: none;
+    background-color: rgb(53, 211, 92);
+    color: white;
+}
+
+/*Quantidade Botoes*/
+.btn-comprar:hover{  
+    background-color: rgb(42, 14, 143); 
+}
+.btn-menos, .btn-mais{
+    border:none;
+    background-color: rgb(53, 211, 92);
+    color: rgb(252, 248, 248);
+}
+.btn-menos:hover, .btn-mais:hover{
+
+    background-color: rgb(42, 14, 143);
+
+}
+

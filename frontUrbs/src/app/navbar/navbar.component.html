@@ -1,0 +1,101 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-nav">
+  <!-- <a class="navbar-brand urbs m-1 ml-2" routerLink='/home'><img src="../../assets/image/logo.png" width="100px" alt=""></a> -->
+  <div class="dropdown">
+    <button class="btn btn-drop dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="navbar-brand urbs m-1 ml-2" routerLink='/home'><img src="../../assets/image/logo.png" width="100px" alt=""></a>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right shadow p-3 mb-5 border-5" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item text-cinza d-flex justify-content-start botoes " type="button" routerLink='/sobre'>SOBRE</button>
+      <button class="dropdown-item text-cinza d-flex justify-content-start botoes" type="button" routerLink='/contato'>CONTATO</button>
+      
+    </div>
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item espacamento">
+        <a class="nav-link texto m-1 ml-5 opcao text-light" routerLink='/home'>HOME<span class="sr-only">(Página
+            atual)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link texto m-1 ml-2 opcao text-light" routerLink='/categoria'>LOJA</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-link texto m-1 ml-2 opcao text-light" href="#" id="navbarDropdown"
+          role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CATEGORIAS
+        </a>
+        <div class="dropdown-menu dropdown-menu-right shadow p-3 mb-5 bg-white rounded border-0"
+          aria-labelledby="navbarDropdown">
+          <a class="dropdown-item d-flex justify-content-start botoes" routerLink='/produto/reciclável'>
+            Reciclável
+          </a>
+          <a class="dropdown-item d-flex justify-content-start botoes" routerLink='/produto/ôrganico'>
+            Orgânico
+          </a>
+          <a class="dropdown-item d-flex justify-content-start botoes" routerLink='/produto/coleta'>
+            Coleta
+          </a>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link texto m-1 ml-2 opcao text-light" routerLink='/sobre'>SOBRE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link texto m-1 ml-2 opcao text-light" routerLink='/contato'>CONTATO</a>
+      </li> -->
+      <div *ngIf='auth.btnLogin()'>
+        <li class="nav-item">
+          <a class="nav-link texto m-1 ml-2 opcao text-light" routerLink='/login'>CONTA</a>
+        </li>
+      </div>
+      <!-- <div *ngIf='auth.btnLogin()'>
+        <li class="nav-item">
+          <a class="nav-link texto m-1 ml-2 opcao text-light" routerLink='/cadastro'>CADASTRO</a>
+        </li>
+      </div> -->
+      <!--<div *ngIf='auth.btnSair()'>
+                <li class="nav-item">
+                    <a class="nav-link texto m-1 ml-2 opcao text-light" routerLink='/categoria'>LOJA</a>
+                </li>
+          </div>-->
+      <div *ngIf='auth.admin()'>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link texto m-1 ml-2 opcao text-light" href="#" id="navbarDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ADMIN
+          </a>
+          <div class="dropdown-menu dropdown-menu-right shadow p-3 mb-5 bg-white rounded border-0"
+            aria-labelledby="navbarDropdown">
+            <a class="dropdown-item botoes d-flex justify-content-start" routerLink='/admin'>
+              Cadastro de Produtos
+            </a>
+            <a class="dropdown-item botoes d-flex justify-content-start" routerLink='/categoria/cadastro'>
+              Cadastro de Categorias
+            </a>
+          </div>
+        </li>
+      </div>
+      <div class="dropdown">
+      <!-- <div *ngIf='auth.admin()' class="dropdown"> -->
+        <button class="btn btn-drop dropdown-toggle espaco-extra" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+
+          <img src="https://www.iconfinder.com/data/icons/yumminky-pc/100/yumminky-pc-43-512.png" width="50px" alt="">
+        </button>
+        <div class="dropdown-menu dropdown-menu-right shadow p-3 mb-5 bg-white rounded border-0"
+          aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item text-cinza d-flex justify-content-start" type="button" >MINHA CONTA</button>
+          <button class="dropdown-item text-cinza d-flex justify-content-start" type="button"
+            routerLink='/carrinho'>CARRINHO</button>
+          <button class="dropdown-item text-cinza d-flex justify-content-start" type="button"><a
+              class="nav-link text-cinza" (click)='sair()'>Sair</a></button>
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>

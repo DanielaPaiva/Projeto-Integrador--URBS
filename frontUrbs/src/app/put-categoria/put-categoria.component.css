@@ -1,0 +1,18 @@
+.fundo{
+    background-color: white;
+    border-radius: 50px 50px;
+    box-shadow: 4px 6px 18px 1px rgba(0, 0, 0, 0.678);
+    margin-top:15%;
+}
+label,h3{
+    font-family: 'Indie Flower', cursive;
+    color:rgb(39, 38, 38);
+}
+input,textarea,select{
+    background-color: #6ac758a6;
+    border-radius: 30px 30px;
+}
+input::placeholder,textarea::placeholder{
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}

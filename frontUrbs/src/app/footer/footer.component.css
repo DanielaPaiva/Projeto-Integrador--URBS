@@ -1,0 +1,42 @@
+.footer{
+    background: linear-gradient(45deg, hsla(148, 72%, 55%, 1) 27%, hsla(201, 49%, 33%, 1) 88%);
+  
+  }
+  
+  ul.social-network {
+      list-style: none;
+      display: inline;
+    
+      padding: 0;
+    }
+    
+    ul.social-network li {
+      display: inline;
+      margin: 0;
+      padding: 5px;
+    }
+    
+    .faFacebook, .faYoutube, .faInstagram, .faLinkedin{
+        color: white;
+    }
+    
+    .faFacebook:hover{
+      color: #031846;
+    }
+    
+    .faInstagram:hover{
+    color: #ad1469;
+    }
+    
+    .faYoutube:hover{
+      color:#d62424;
+    }
+
+    .faLinkedin:hover{
+      color:#4269e7;
+    }
+
+    footer {
+      margin-top: 50px;
+      bottom: 0;
+    }

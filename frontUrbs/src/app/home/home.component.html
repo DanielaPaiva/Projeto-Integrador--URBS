@@ -1,0 +1,314 @@
+<!--Carousel de produtos-->
+<div class="container-fluid p-0">
+  <div id="carouselExampleIndicators" class="carousel slide bg-nav" data-ride="carousel">
+    <ol class="carousel-indicators ">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="container carousel-inner ">
+
+      <div class="cr carousel-item active">
+        <a [routerLink]="['/produto', 'reciclável']"><img class="d-block  espaco-imagem tm-image rounded"
+            src="../../assets/image/reciclaveisnovo (1).png" alt="primeiro Slide"></a>
+      </div>
+      <div class="cr carousel-item">
+        <a [routerLink]="['/produto', 'coleta']"><img class="d-block  espaco-imagem tm-image "
+            src="../../assets/image/coletanovo.png" alt="Terceiro Slide"></a>
+      </div>
+
+      
+      <div class="cr carousel-item">
+        <a [routerLink]="['/produto', 'orgânico']"><img class="d-block  espaco-imagem tm-image"
+            src="../../assets/image/organicosnovo.png" alt="segundo Slide"></a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+
+  </div>
+</div>
+
+
+<!--Cards-Propositos-->
+<div class="container mt-5 ">
+  <h1 class="text-center">Qual é o desafio da Urbs?</h1>
+  <div class="d-flex justify-content-center mt-5">
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/sustentabilidade.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h3 class="text-center">Sustentabilidade</h3>
+        <p class="card-text text-justify">Um estilo de vida orgânico e sustentável começa com a valorização da
+          agricultura familiar e da produção agroflorestal. Os recursos naturais devem ser utilizados com inteligência:
+          menos plástico e combate ao desperdício de água.</p>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/consumonovo.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h3 class="text-center">Consumo consciente</h3>
+        <p class="card-text text-justify">Além de comida de verdade, oferecemos produtos de higiene pessoal e
+          cosméticos, todos naturais e certificados. Há ainda produtos de limpeza naturais e biodegradáveis, pois o
+          impacto no meio ambiente vai além das nossas escolhas alimentares.</p>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/reciclagemnovo.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h3 class="text-center">Reciclagem</h3>
+        <p class="card-text text-justify">Orientamos o descarte da forma correta dos lixos recicláveis, também em
+          parceria com catadores, valorizando o seu trabalho sustentável.</p>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/desperdicionovo.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h3 class="text-center">Combate de desperdicio</h3>
+        <p class="card-text text-justify">Evitamos o desperdício de alimentos e a geração de lixo que isso acarreta, em
+          parceria com ONGs e programas de distribuição de excedentes. Temos uma seção #prolixo não vai, na qual
+          ofertamos produtos mais maduros por preços mais convenientes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Parallax-->
+<div class="mt-5 w-100 parallax">
+  <button type=button class="btn-conheca" routerLink='/sobre'>Conheça a Urbs</button>
+</div>
+
+<!--Como funciona a loja-->
+<div class="container mt-5 ">
+  <h1 class="text-center">Como funciona?</h1>
+  <div class="d-flex justify-content-center mt-5">
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/compra (1).png" alt="Imagem de capa do card">
+      <p class="card-text text-justify como-funciona">Aqui você encontrará os melhores produtos.</p>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/entrega.png" alt="Imagem de capa do card">
+      <p class="card-text text-justify como-funciona">Terá o conforto de receber em casa.</p>
+    </div>
+    <div class="card m-2" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/image/diferenca.png" alt="Imagem de capa do card">
+      <p class="card-text text-justify como-funciona">Faz a diferença! Você ajuda o meio ambiente e os pequenos
+        produtores</p>
+    </div>
+  </div>
+</div>
+
+
+<!--Jumbotron-->
+<div class="jumbotron jumbotron-fluid mt-5 body">
+  <div class="container">
+    <div class="container d-flex justify-content-center">
+      <h1 class="display-4 jumbo">Veja alguns de nossos produtos</h1>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <p class="lead ml-3 jumbo">Os mais queridinhos.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Carousel de produtos-->
+<div class="container">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row mt-4 ">
+          <div class="col-md-3 d-flex justify-content-end pr-5 pb-5">
+            <div class="card border-0 card-prod">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Arroz orgânico 5Kg</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144"
+                  src="https://static.carrefour.com.br/medias/sys_master/images/images/h85/h32/h00/h00/11854972911646.jpg"
+                  alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto">R$ 23,99</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2  ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Suco orgânico L</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144"
+                  src="https://savegnago.vteximg.com.br/arquivos/ids/283869-1000-1000/SUCO-NATURACITRUS-1L-NATURAL-LARANJA.jpg?v=636440427812000000"
+                  alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto">R$ 11,89</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2  ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod ">
+              <div>
+                <h5 class="card-title text-center nome-produto mt-4">Tomante orgânico Kg</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144"
+                  src="https://assets.instabuy.com.br/ib.item.image.big/b-bb49b1a78d2e4bfbbbe1e52a56332d6e.jpg"
+                  alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto ">R$ 8,99</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2  ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod ">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Cenoura orgânica Kg</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144"
+                  src="https://sorganicos.com.br/image/cache/sellers/18/cenoura-500x500.png"
+                  alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto">R$ 5,99</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40   ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="row mt-4">
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Copo Material Orgânico</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144" src="https://cdn.awsli.com.br/600x450/1127/1127881/produto/45503210c969fb2b0e.jpg"
+                  alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto">R$ 15,59</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2  ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Pote Infantil</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144" src="https://imgur.com/AiUn4Om.jpg"
+                  alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto nome-produto">R$ 8,99</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2 ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Vaso decorativo</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144" src="https://i.imgur.com/FJ8yOg4.jpg">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto">R$ 15,99</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2 ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 d-flex justify-content-start pl-5 pb-5">
+            <div class="card border-0 card-prod">
+              <div>
+                <h5 class="card-title text-center  mt-4 nome-produto">Alface orgânico Kg</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-70 h-144"
+                  src="https://images.zonasul.com.br/imagem1000X1000/2020519_20087.jpg" alt="Imagem de capa do card">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title text-center  mt-4 nome-produto">R$ 8,99</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-comprar w-40 mb-2 ">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+</div>
+<!--Informações-->
+<div class="container mt-5 text-center">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Formas de pagamento</h3>
+      <hr>
+      <img src="https://21239.cdn.simplo7.net/static/21239/galeria/157841872471713.png" width="300px" height="50px"
+        alt="">
+    </div>
+    <div class="col-md-4">
+      <h3>Parceiros</h3>
+      <hr>
+      <a href="">Produtores Orgânicos</a> <br>
+      <a href="">Coletores</a><br>
+      <a href="">ONG's</a><br>
+    </div>
+    <div class="col-md-4">
+      <h3>Atendimentos</h3>
+      <hr>
+      <a routerLink='/contato'>Fale Conosco</a><br>
+      <a routerLink='/cadastro'>Cadastre-se</a><br>
+      <a routerLink='/contato' (click)='semSac()'>SAC</a><br>
+    </div>
+  </div>
+</div>
+<hr>

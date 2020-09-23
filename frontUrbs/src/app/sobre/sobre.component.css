@@ -1,0 +1,33 @@
+.parallax {
+    min-height: 250px;
+
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corFundo {
+    background: linear-gradient(90deg, hsla(192, 75%, 36%, 1) 5%, hsla(114, 91%, 54%, 1) 76%);
+}
+
+.espacamento {
+    padding-top: 80pt;
+}
+h1,p{
+    /* font-family: 'Indie Flower', cursive; */
+    color:rgb(39, 38, 38);
+}
+p{
+    font-size: 20px;
+}
+
+.btn-contato, .btn-home{
+    border:none;
+    background: linear-gradient(45deg, hsla(148, 72%, 55%, 1) 27%, hsla(201, 49%, 33%, 1) 88%);
+    color:white;
+    /* font-family: 'Indie Flower', cursive; */
+}
+.btn-contato, .btn-home:hover{
+    background-color:hsla(192, 75%, 36%, 1);
+}

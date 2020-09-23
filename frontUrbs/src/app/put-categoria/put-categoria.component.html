@@ -1,0 +1,41 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Indie+Flower&display=swap');
+  </style>
+  
+  <div class="container ">
+  
+      <div class="row  mb-5 fundo">
+          <div class="col-md-6">
+              <div>
+                <h3 class="text-center mt-3">Alterações</h3>
+                  <div class="form-group mt-5 ml-3">
+                    <label for="titulo">Nome da categoria</label>
+                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite o nome da categoria" [(ngModel)]="categoria.nome">
+                  </div>
+    
+                  <div class="form-group ml-3">
+                      <label for="texto">Descrição do categoria</label>
+                      <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição da categoria" [(ngModel)]="categoria.descricao"></textarea>
+                  </div>
+    
+                  <!-- <div class="form-group ml-3">
+                    <label class="" for="categoria">Escolha uma categoria</label>
+                    <select name="categoria" id='categoria' [(ngModel)]="idCategoria" (change)="findByIdCategoria()" class="form-control">
+                      <option *ngFor="let item of listaCategorias" value={{item.id}}>
+                        {{item.descricao}}
+                      </option>
+                    </select>
+                  </div> -->
+    
+                  <div class="d-flex justify-content-end mt-3">
+                      <button type="button" class="btn btn-outline-info mb-3 w-25" (click)="salvar()">Salvar</button>
+                  </div>
+              </div>
+    
+          </div>
+        
+          <div class="col-md-6">
+            <img src="../../assets/image/agricultor.png" width="80%" alt="">
+          </div>
+      </div>
+    </div>
