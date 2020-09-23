@@ -2,6 +2,6 @@
 Projeto desenvolvido na GenerationBrasil
 
 
-![urbs](demo/gif.gif)
+![urbs](demo/urbsDemo.gif)
 
 
